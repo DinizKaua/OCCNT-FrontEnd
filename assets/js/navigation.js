@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
         })
     })
 
-    const ctaButton = document.querySelector('.cta-button');
+    const ctaButton = document.querySelector('.about-button');
     if(ctaButton){
         ctaButton.addEventListener('click', function(){
             window.location.href = 'sobre.html';

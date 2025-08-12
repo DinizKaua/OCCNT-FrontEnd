@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>OCCNT</title>
 </head>
 <body>
-    <h1>Sobre</h1>
+    <header class="header">
+        <nav class="navigation">
+            <button class="nav-button" data-section="dados">Dados</button>
+            <button class="nav-button" data-section="sobre">Sobre</button>
+            <button class="nav-button" data-section="repositorio">Repositório</button>
+        </nav>
+    </header>
+    
+    <main class="main-content">
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="main-title">SOBRE O PROJETO</h1>
+            </div>
+        </section>
+
+        <section class="about-content">
+            <div class="content-container">
+                <p class="content-paragraph">
+                    O Observatório de Condições Crônicas não transmissíveis foi desenvolvido em conjunto pelo Laboratório de Inteligência Interativa e Grupo de Estudos Pesquisa e Extensão em Saúde do Adulto com apoio da Universidade Federal do Maranhão.
+                </p>
+                <p class="content-paragraph">
+                    Este projeto tem como objetivo analisar dados relacionados a condições crônicas não transmissíveis por meio de séries temporais. A aplicação desenvolvida utiliza modelagens preditivas para identificar tendências e projetar possíveis cenários futuros com base em registros históricos.
+                </p>
+                <p class="content-paragraph">
+                    Com uma interface interativa e acessível, o sistema permite ao usuário explorar os dados e visualizar tanto a evolução passada quanto a estimativa de evolução futura, auxiliando na compreensão e planejamento de políticas de saúde pública.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/navigation.js"></script>
 </body>
 </html>

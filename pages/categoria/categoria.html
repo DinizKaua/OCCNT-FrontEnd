@@ -17,10 +17,27 @@
     <main class="main-content">
         <section class="hero-section">
             <div class="hero-content">
-                <h1 class="main-title">DOENÇAS SENSORIAIS</h1>
+                <h1 class="main-title" id="categoryTitle"></h1>
+            </div>
+        </section>
+
+        <section class="about-content">
+            <div class="content-container">
+                <p class="content-paragraph" id="categoryDescription"></p>
+            </div>
+        </section>
+
+        <section class="drawer">
+            <div class="drawer-header">
+                <button class="drawer-title" aria-expanded="false">OBSERVATÓRIO</button>
+            </div>
+            <div class="drawer-content" hidden>
+                <ul class="drawer-list" id="diseasesList"></ul>
             </div>
         </section>
     </main>
+
     <script src="../../assets/js/navigation.js"></script>
+    <script src="../../assets/js/drawer.js"></script>
+    <script src="../../assets/js/categoryManager.js"></script>
 </body>
-</html>

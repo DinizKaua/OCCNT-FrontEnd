@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
     diseaseCard.forEach(card => {
         card.addEventListener('click', function(){
             const category = this.getAttribute('data-category');
-            window.location.href = `pages/categoria/categoria.html?disease=&{category}`;
+            window.location.href = `pages/categoria/categoria.html?disease=${category}`;
 
         })
     })

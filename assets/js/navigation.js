@@ -9,11 +9,12 @@ document.addEventListener('DOMContentLoaded', function() {
                     break;
                     
                 case 'sobre':
-                    window.location.href = '/sobre.html';
+                    window.location.href = '/pages/outros/sobre.html';
                     break;
                 
                 case 'repositorio':
-                    window.location.href = '/repositorio.html';
+                    window.location.href = '/pages/outros/repositorio.html';
+                    break;
             }
         })
     })
@@ -21,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const aboutButton = document.querySelector('.about-button');
     if(aboutButton){
         aboutButton.addEventListener('click', function(){
-            window.location.href = 'sobre.html';
+            window.location.href = 'pages/outros/sobre.html';
         })
     }
 
@@ -30,8 +31,6 @@ document.addEventListener('DOMContentLoaded', function() {
         card.addEventListener('click', function(){
             const category = this.getAttribute('data-category');
             window.location.href = `pages/categoria/categoria.html?disease=${category}`;
-
         })
     })
-        
 })

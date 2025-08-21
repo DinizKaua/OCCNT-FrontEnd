@@ -12,12 +12,17 @@
             <button class="nav-button" data-section="sobre">Sobre</button>
             <button class="nav-button" data-section="repositorio">Repositório</button>
         </nav>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+        <script src="../../assets/js/navigation.js"></script>
+        <script src="../../assets/js/chart.js"></script>
+        <link rel="stylesheet" href="/assets/css/navigation.css">
     </header>
 
     <main class="main-content">
         <section class="hero-section">
             <div class="hero-content">
-                <h1 class="main-title"></h1>
+                <h1 class="main-title">OBSERVATÓRIO</h1>
             </div>
         </section>
 
@@ -28,10 +33,11 @@
                 </p>
             </div>
         </section>
-        <section class="graphic">
-            
+        <section class="chart">
+            <div class="chart-content">
+                <canvas id="disease-chart" width="600" height="400"></canvas>
+            </div>
         </section>
     </main>
-    <script src="../../assets/js/navigation.js"></script>
 </body>
 </html>

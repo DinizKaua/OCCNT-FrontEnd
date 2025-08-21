@@ -1,0 +1,13 @@
+{
+  "title": "Evolução de Casos por Mês - 2024",
+  "datasets": [
+    {
+      "label": "Casos Confirmados",
+      "data": [120, 190, 300, 500, 200, 300, 450, 380, 290, 150, 180, 220],
+      "borderColor": "#667eea",
+      "backgroundColor": "rgba(102, 126, 234, 0.1)",
+      "tension": 0.3
+    }
+  ],
+  "labels": ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"]
+}

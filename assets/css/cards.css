@@ -1,0 +1,92 @@
+.diseases-section {
+    padding: 4rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.diseases-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.disease-card {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(34, 197, 94, 0.1);
+    border-radius: 20px;
+    padding: 2rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.disease-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(34, 197, 94, 0.15);
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.card-content {
+    text-align: left;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #065f46;
+    margin-bottom: 1rem;
+    transition: color 0.2s ease;
+}
+
+.disease-card:hover .card-title {
+    color: #059669;
+}
+
+.card-description {
+    color: #6b7280;
+    font-size: 1rem;
+    line-height: 1.6;
+    transition: color 0.2s ease;
+}
+
+.disease-card:hover .card-description {
+    color: #374151;
+}
+
+/* Cores específicas por categoria */
+.disease-card[data-category="cardiovascular"]:hover .card-title { color: #dc2626; }
+.disease-card[data-category="respiratoria"]:hover .card-title { color: #2563eb; }
+.disease-card[data-category="cancer"]:hover .card-title { color: #7c3aed; }
+.disease-card[data-category="neurologica"]:hover .card-title { color: #db2777; }
+.disease-card[data-category="endocrina"]:hover .card-title { color: #d97706; }
+.disease-card[data-category="sensorial"]:hover .card-title { color: #0d9488; }
+.disease-card[data-category="osteomuscular"]:hover .card-title { color: #84cc16; }
+.disease-card[data-category="outras"]:hover .card-title { color: #6366f1; }
+
+@media (max-width: 768px) {    
+    .diseases-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .disease-card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .diseases-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .disease-card {
+        padding: 1.25rem;
+    }
+    
+    .card-title {
+        font-size: 1.25rem;
+    }
+
+}

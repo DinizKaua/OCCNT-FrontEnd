@@ -6,8 +6,16 @@
   
   "diseases": [
     {
-      "name": "nada",
-      "id": "nada"
+      "name": "Asma",
+      "id": "asma"
+    },
+    {
+      "name":"Bronquite Crônica",
+      "id": "bronquite-cronica"
+    },
+    {
+      "name": "Efisema Pulmonar",
+      "id": "efisema-pulmonar" 
     }
   ]
 }

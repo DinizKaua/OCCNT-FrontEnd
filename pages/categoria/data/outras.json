@@ -6,8 +6,16 @@
   
   "diseases": [
     {
-      "name": "nada",
-      "id": "nada"
+      "name": "Lúpus Eritematoso Sistêmico",
+      "id": "lupus-eritematoso-sistemico"
+    },
+    {
+      "name": "Doença Cilíaca",
+      "id": "celiaca"
+    },
+    {
+      "name": "Endometriose",
+      "id": "endometriose"
     }
   ]
 }

@@ -12,6 +12,10 @@
     {
         "name":"Doença Arterial Coronariana",
         "id":"doenca-arterial-coronariana"
+    },
+    {
+      "name": "Arritimia",
+      "id": "arritimia"
     }
   ]
 }

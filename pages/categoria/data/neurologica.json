@@ -6,8 +6,16 @@
   
   "diseases": [
     {
-      "name": "nada",
-      "id": "nada"
+      "name": "Doença de Alzheimer",
+      "id": "alzheimer"
+    },
+    {
+      "name": "Doença de Parkinson",
+      "id": "parkinson"
+    },
+    {
+      "name": "Epilepsia",
+      "id": "epilepsia"
     }
   ]
 }

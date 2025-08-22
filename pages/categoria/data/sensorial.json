@@ -6,8 +6,16 @@
   
   "diseases": [
     {
-      "name": "nada",
-      "id": "nada"
+      "name": "Glaucoma",
+      "id": "glaucoma"
+    },
+    {
+      "name": "Surdez Neurossensorial",
+      "id": "surdez-neurossensorial"
+    },
+    {
+      "name": "Catarata",
+      "id": "catarata"
     }
   ]
 }

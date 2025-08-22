@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', async function() {
     // Pega a categoria da URL
     const urlParams = new URLSearchParams(window.location.search);
-    const category = urlParams.get('disease');
+    const category = urlParams.get('disease'); 
     
-    if (!category) {
+    if (!category) { // se a categoria n existe
         console.error('Categoria não encontrada na URL');
         return;
     }

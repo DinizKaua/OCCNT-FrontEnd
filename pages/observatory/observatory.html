@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Visualizações gráficas e análises preditivas de séries temporais sobre condições crônicas não transmissíveis">
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/navigation.css">
+    <link rel="stylesheet" href="/assets/css/paragraph.css">
+    <title>Observatório - OCCNT</title>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Pular para conteúdo principal</a>
+    
+    <header class="header">
+        <nav class="navigation" role="navigation" aria-label="Navegação principal">
+            <button class="nav-button active" data-section="dados" aria-current="page" aria-label="Página atual - Dados sobre condições crônicas">Dados</button>
+            <button class="nav-button" data-section="sobre" aria-label="Informações sobre o observatório">Sobre</button>
+            <button class="nav-button" data-section="repositorio" aria-label="Acessar repositório de dados">Repositório</button>
+        </nav>
+    </header>
+
+    <main class="main-content" id="main-content">
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="main-title">Observatório</h1>
+            </div>
+        </section>
+
+        <section class="about-content">
+            <div class="content-container">
+                <p class="content-paragraph">
+                    A seguir, apresenta-se a representação gráfica da série temporal contendo os valores observados e a previsão obtida a partir do modelo preditivo aplicado.
+                </p>
+            </div>
+        </section>
+
+        <section class="chart">
+            <div class="chart-content">
+                <canvas id="disease-chart" width="300" height="400"></canvas>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="/assets/js/navigation.js"></script>
+    <script src="/assets/js/chart.js"></script>
+</body>
+</html>

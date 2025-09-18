@@ -10,11 +10,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     break;
                     
                 case 'sobre':
-                    window.location.href = '/pages/outros/sobre.html';
+                    window.location.href = '/pages/others/about.html';
                     break;
                 
                 case 'repositorio':
-                    window.location.href = '/pages/outros/repositorio.html';
+                    window.location.href = '/pages/others/repository.html';
                     break;
             }
         })
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const aboutButton = document.querySelector('.about-button'); // selecion o about-button
     if(aboutButton){ // se ele existe
         aboutButton.addEventListener('click', function(){
-            window.location.href = 'pages/outros/sobre.html'; // redireciona com o click
+            window.location.href = 'pages/others/about.html'; // redireciona com o click
         })
     }
 
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
     diseaseCard.forEach(card => {
         card.addEventListener('click', function(){
             const category = this.getAttribute('data-category'); // seleciona a categoria
-            window.location.href = `pages/categoria/categoria.html?disease=${category}`; // redireciona para a pagina passando a cartegoria como parametro
+            window.location.href = `pages/category/category.html?disease=${category}`; // redireciona para a pagina passando a cartegoria como parametro
         })
     })
 })

@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', async function() {
 
     try {
         // Carrega o JSON da categoria
-        const response = await fetch(`../../pages/categoria/data/${category}.json`);
+        const response = await fetch(`../../pages/category/data/${category}.json`);
         const data = await response.json();
         
         // Preenche título
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', async function() {
         const diseasesList = document.getElementById('diseasesList');
         diseasesList.innerHTML = data.diseases.map(disease => 
             `<li class="drawer-item">
-                <a href="../observatorio/observatorio.html?disease=${disease.id}">${disease.name}</a>
+                <a href="../observatory/observatory.html?disease=${disease.id}">${disease.name}</a>
             </li>`
         ).join('');
         

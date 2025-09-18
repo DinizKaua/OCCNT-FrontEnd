@@ -3,92 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Observatório de Condições Crônicas Não Transmissíveis - Dados e informações sobre doenças cardiovasculares, respiratórias, câncer e outras condições crônicas">
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <title>OCCNT</title>
+    <link rel="stylesheet" href="assets/css/navigation.css">
+    <link rel="stylesheet" href="assets/css/cards.css">
+    <title>OCCNT - Observatório de Condições Crônicas Não Transmissíveis</title>
 </head>
 <body>
-
+    <a href="#main-content" class="skip-link">Pular para conteúdo principal</a>
+    
     <header class="header">
-        <nav class="navigation">
-            <button class="nav-button" data-section="dados">Dados</button>
-            <button class="nav-button" data-section="sobre">Sobre</button>
-            <button class="nav-button" data-section="repositorio">Repositório</button>
+        <nav class="navigation" role="navigation" aria-label="Navegação principal">
+            <button class="nav-button" data-section="dados" aria-label="Acessar dados sobre condições crônicas">Dados</button>
+            <button class="nav-button" data-section="sobre" aria-label="Informações sobre o observatório">Sobre</button>
+            <button class="nav-button" data-section="repositorio" aria-label="Acessar repositório de dados">Repositório</button>
         </nav>
-
-        <script src="assets/js/navigation.js"></script>
-        <link rel="stylesheet" href="/assets/css/navigation.css">
-        <link rel="stylesheet" href="/assets/css/cards.css">
     </header>
 
-    <main class="main-content">
+    <main class="main-content" id="main-content">
         <section class="hero-section">
             <div class="hero-content">
                 <h1 class="main-title">Observatório de Condições Crônicas Não Transmissíveis</h1>
-                <button class="about-button" data-action="sobre-projeto">sobre o projeto</button>
+                <button class="about-button" data-action="sobre-projeto" aria-label="Saiba mais detalhes sobre o projeto OCCNT">sobre o projeto</button>
             </div>
         </section>
 
         <section class="diseases-section">
-            <div class="diseases-grid">
+            <div class="diseases-grid" role="grid" aria-label="Categorias de doenças crônicas não transmissíveis">
                 
-                <button class="disease-card" data-category="cardiovascular">
+                <button class="disease-card" data-category="cardiovascular" aria-describedby="cardio-desc">
                     <div class="card-content">
                         <h3 class="card-title">Doenças Cardiovasculares</h3>
-                        <p class="card-description">Hipertensão arterial, Arritmias, Doença Arterial Coronariana</p>
+                        <p class="card-description" id="cardio-desc">Hipertensão arterial, Arritmias, Doença Arterial Coronariana</p>
                     </div>
                 </button>
 
-                <button class="disease-card" data-category="respiratoria">
+                <button class="disease-card" data-category="respiratoria" aria-describedby="resp-desc">
                     <div class="card-content">
-                        <h3 class="card-title">Doenças Respiratórioas</h3>
-                        <p class="card-description">Asma, Bronquite crônica, Enfisema Pulmonar</p>
+                        <h3 class="card-title">Doenças Respiratórias</h3>
+                        <p class="card-description" id="resp-desc">Asma, Bronquite crônica, Enfisema Pulmonar</p>
                     </div>
                 </button>
 
-                <button class="disease-card" data-category="cancer">
+                <button class="disease-card" data-category="cancer" aria-describedby="cancer-desc">
                     <div class="card-content">
                         <h3 class="card-title">Câncer</h3>
-                        <p class="card-description">nada ainda</p>
+                        <p class="card-description" id="cancer-desc">Câncer de Mama, Câncer de Pulmão, Câncer Colorretal</p>
                     </div>
                 </button>
 
-                <button class="disease-card" data-category="neurologica">
+                <button class="disease-card" data-category="neurologica" aria-describedby="neuro-desc">
                     <div class="card-content">
                         <h3 class="card-title">Doenças Neurológicas e Mentais</h3>
-                        <p class="card-description">Doença de Alzheimer, Doença de Parkinson, Epilepsia</p>
+                        <p class="card-description" id="neuro-desc">Doença de Alzheimer, Doença de Parkinson, Epilepsia</p>
                     </div>
                 </button>
 
-                <button class="disease-card" data-category="endocrina">
+                <button class="disease-card" data-category="endocrina" aria-describedby="endo-desc">
                     <div class="card-content">
                         <h3 class="card-title">Doenças Endócrinas, Nutricionais e Metabólicas</h3>
-                        <p class="card-description"> nada ainda</p>
+                        <p class="card-description" id="endo-desc">Diabetes Mellitus, Obesidade, Distúrbios da Tireoide</p>
                     </div>
                 </button>
 
-                <button class="disease-card" data-category="sensorial">
+                <button class="disease-card" data-category="sensorial" aria-describedby="sens-desc">
                     <div class="card-content">
                         <h3 class="card-title">Doenças Sensoriais</h3>
-                        <p class="card-description">Glaucoma, Surdez Neurossensorial, Catarata</p>
+                        <p class="card-description" id="sens-desc">Glaucoma, Surdez Neurossensorial, Catarata</p>
                     </div>
                 </button>
 
-                <button class="disease-card" data-category="osteomuscular">
+                <button class="disease-card" data-category="osteomuscular" aria-describedby="osteo-desc">
                     <div class="card-content">
                         <h3 class="card-title">Doenças Osteomusculares e Articulares</h3>
-                        <p class="card-description">nada tbm</p>
+                        <p class="card-description" id="osteo-desc">Artrite Reumatoide, Osteoporose, Fibromialgia</p>
                     </div>
                 </button>
 
-                <button class="disease-card" data-category="outras">
+                <button class="disease-card" data-category="outras" aria-describedby="outras-desc">
                     <div class="card-content">
                         <h3 class="card-title">Outras Condições Crônicas Funcionais</h3>
-                        <p class="card-description">Lúpus Eritematoso Sistêmico, Doeença Celíaca, Endometriose</p>
+                        <p class="card-description" id="outras-desc">Lúpus Eritematoso Sistêmico, Doença Celíaca, Endometriose</p>
                     </div>
                 </button>
-
             </div>
         </section>
     </main>
+    <script src="assets/js/navigation.js"></script>
 </body>
 </html>

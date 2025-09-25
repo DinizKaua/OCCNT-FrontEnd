@@ -25,34 +25,3 @@
     filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.2));
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .logos-section {
-        padding: 2rem 1.5rem 0;
-    }
-    
-    .logos-container {
-        gap: 2rem;
-    }
-    
-    .logo-image {
-        width: 140px;
-        height: 140px;
-    }
-}
-
-@media (max-width: 480px) {
-    .logos-section {
-        padding: 1.5rem 1rem 0;
-    }
-    
-    .logos-container {
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-    
-    .logo-image {
-        width: 120px;
-        height: 120px;
-    }
-}

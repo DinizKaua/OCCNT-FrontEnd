@@ -83,29 +83,3 @@
 .disease-card[data-category="osteomuscular"]:hover .card-title { color: #84cc16; }
 .disease-card[data-category="outras"]:hover .card-title { color: #6366f1; }
 
-@media (max-width: 768px) {    
-    .diseases-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-    
-    .disease-card {
-        padding: 1.5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .diseases-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-    
-    .disease-card {
-        padding: 1.25rem;
-    }
-    
-    .card-title {
-        font-size: 1.25rem;
-    }
-
-}
